@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brains College – Educational AI Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+  <!-- DEMO BACKGROUND -->
+  <div class="page-bg">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+  </div>
+
+  <!-- DEMO WEBSITE CONTENT -->
+  <main class="demo-content">
+    <header class="site-header">
+      <div class="logo">
+        <span class="logo-icon">🎓</span>
+        <span class="logo-text">BRAINS COLLEGE</span>
+      </div>
+      <nav class="site-nav">
+        <a href="#">Admissions</a>
+        <a href="#">Courses</a>
+        <a href="#">Campus</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-badge">Pakistan's Premier Institution</div>
+      <h1 class="hero-title">Shape Your <span class="gradient-text">Future</span><br/>With Knowledge</h1>
+      <p class="hero-sub">World-class education, state-of-the-art campuses, and a community built for tomorrow's leaders.</p>
+      <div class="hero-cta">
+        <button class="btn-primary">Apply Now</button>
+        <button class="btn-ghost">Explore Programs</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">12K+</span><span class="stat-label">Students</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Programs</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Placement</span></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CHAT TRIGGER BUTTON -->
+  <button class="chat-trigger" id="chatTrigger" aria-label="Open AI Assistant">
+    <span class="trigger-icon" id="triggerIcon">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+        <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+    <span class="trigger-pulse"></span>
+    <span class="trigger-label">AI Assistant</span>
+  </button>
+
+  <!-- CHATBOT PANEL -->
+  <aside class="chat-panel" id="chatPanel" aria-hidden="true">
+
+    <!-- Header -->
+    <div class="panel-header">
+      <div class="panel-identity">
+        <div class="avatar">
+          <span>🎓</span>
+          <span class="avatar-online"></span>
+        </div>
+        <div class="panel-meta">
+          <span class="panel-name">Brains AI Assistant</span>
+          <span class="panel-status">● Online &amp; Ready</span>
+        </div>
+      </div>
+      <div class="panel-actions">
+        <!-- Tab switcher -->
+        <div class="tab-switcher">
+          <button class="tab-btn active" id="tabChat" title="Chat">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Chat
+          </button>
+          <button class="tab-btn" id="tabLead" title="Register Interest">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Enquire
+          </button>
+        </div>
+        <button class="icon-btn" id="clearBtn" title="Clear chat">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+        </button>
+        <button class="icon-btn" id="closeBtn" title="Close">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ===== CHAT TAB ===== -->
+    <div class="tab-content" id="chatTab">
+      <!-- Quick Topics -->
+      <div class="quick-topics" id="quickTopics">
+        <p class="qt-label">Quick questions</p>
+        <div class="qt-chips">
+          <button class="chip" data-msg="What are the admission requirements?">Admissions</button>
+          <button class="chip" data-msg="What courses are available?">Courses</button>
+          <button class="chip" data-msg="What are the fee structures?">Fees</button>
+          <button class="chip" data-msg="Tell me about scholarships">Scholarships</button>
+          <button class="chip" data-msg="What are the campus locations?">Campuses</button>
+          <button class="chip" data-msg="What are the class timings?">Timings</button>
+        </div>
+      </div>
+
+      <!-- Messages -->
+      <div class="messages-container" id="messagesContainer"></div>
+
+      <!-- Typing Indicator -->
+      <div class="typing-indicator" id="typingIndicator" style="display:none;">
+        <div class="typing-avatar">🎓</div>
+        <div class="typing-dots"><span></span><span></span><span></span></div>
+      </div>
+
+      <!-- Input -->
+      <div class="input-area">
+        <div class="input-wrapper">
+          <textarea id="userInput" class="chat-input" placeholder="Ask about admissions, fees, courses…" rows="1" maxlength="500"></textarea>
+          <button class="send-btn" id="sendBtn" disabled>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <line x1="22" y1="2" x2="11" y2="13" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+        </div>
+        <p class="input-hint">Powered by Brains College AI</p>
+      </div>
+    </div>
+
+    <!-- ===== LEAD / ENQUIRY TAB ===== -->
+    <div class="tab-content hidden" id="leadTab">
+      <div class="lead-form-wrap">
+
+        <div class="lead-header">
+          <div class="lead-icon">📋</div>
+          <h3>Register Your Interest</h3>
+          <p>Fill in your details and our team will get in touch with you shortly.</p>
+        </div>
+
+        <!-- Success State (hidden by default) -->
+        <div class="lead-success" id="leadSuccess" style="display:none;">
+          <div class="success-icon">✅</div>
+          <h3>Submitted Successfully!</h3>
+          <p>Thank you! Our admissions team will contact you soon.</p>
+          <button class="btn-submit" id="leadAgainBtn" style="margin-top:16px;">Submit Another</button>
+        </div>
+
+        <!-- Form Fields -->
+        <div id="leadFormFields">
+          <!-- Name -->
+          <div class="field-group">
+            <label class="field-label" for="leadName">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              Full Name <span class="required">*</span>
+            </label>
+            <input type="text" id="leadName" class="field-input" placeholder="e.g. Ahmed Khan" maxlength="80" autocomplete="name" />
+            <span class="field-error" id="nameError"></span>
+          </div>
+
+          <!-- Phone -->
+          <div class="field-group">
+            <label class="field-label" for="leadPhone">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.45 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.9z"/></svg>
+              Phone Number <span class="required">*</span>
+            </label>
+            <input type="tel" id="leadPhone" class="field-input" placeholder="e.g. 0300-1234567" maxlength="20" autocomplete="tel" />
+            <span class="field-error" id="phoneError"></span>
+          </div>
+
+          <!-- Campus Dropdown -->
+          <div class="field-group">
+            <label class="field-label" for="leadCampus">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Preferred Campus <span class="required">*</span>
+            </label>
+            <div class="select-wrapper">
+              <select id="leadCampus" class="field-select">
+                <option value="">— Select a campus —</option>
+                <option value="Walton Road">Walton Road</option>
+                <option value="Queen Road">Queen Road</option>
+                <option value="Darogwala">Darogwala</option>
+                <option value="Bhagbanpura">Bhagbanpura</option>
+              </select>
+              <svg class="select-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </div>
+            <span class="field-error" id="campusError"></span>
+          </div>
+
+          <!-- Privacy note -->
+          <p class="privacy-note">
+            🔒 Your information is kept private and only used to contact you about admissions.
+          </p>
+
+          <!-- Submit -->
+          <button class="btn-submit" id="leadSubmitBtn">
+            <span id="submitBtnText">Submit Enquiry</span>
+            <span id="submitBtnSpinner" style="display:none;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" style="animation:spin 0.8s linear infinite"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              Submitting…
+            </span>
+          </button>
+
+          <!-- API error banner -->
+          <div class="submit-error" id="submitError" style="display:none;"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </aside>
+
+  <div class="chat-overlay" id="chatOverlay"></div>
+
+  <script src="/static/chatbot.js"></script>
+</body>
+</html>
