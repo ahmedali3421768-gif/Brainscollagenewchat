@@ -10,61 +10,28 @@
   <link rel="stylesheet" href="/static/style.css" />
 </head>
 <body>
+  
 
-  <!-- DEMO BACKGROUND -->
-  <div class="page-bg">
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
-    <div class="bg-orb orb-3"></div>
-  </div>
-
-  <!-- DEMO WEBSITE CONTENT -->
-  <main class="demo-content">
-    <header class="site-header">
-      <div class="logo">
-        <span class="logo-icon">🎓</span>
-        <span class="logo-text">BRAINS COLLEGE</span>
-      </div>
-      <nav class="site-nav">
-        <a href="#">Admissions</a>
-        <a href="#">Courses</a>
-        <a href="#">Campus</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-    <section class="hero">
-      <div class="hero-badge">Pakistan's Premier Institution</div>
-      <h1 class="hero-title">Shape Your <span class="gradient-text">Future</span><br/>With Knowledge</h1>
-      <p class="hero-sub">World-class education, state-of-the-art campuses, and a community built for tomorrow's leaders.</p>
-      <div class="hero-cta">
-        <button class="btn-primary">Apply Now</button>
-        <button class="btn-ghost">Explore Programs</button>
-      </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">12K+</span><span class="stat-label">Students</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Programs</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Placement</span></div>
-      </div>
-    </section>
-  </main>
-
-  <!-- CHAT TRIGGER BUTTON -->
+  <!-- =====================================================
+       CHAT TRIGGER BUTTON
+  ====================================================== -->
   <button class="chat-trigger" id="chatTrigger" aria-label="Open AI Assistant">
     <span class="trigger-icon" id="triggerIcon">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-        <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z"
+          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </span>
     <span class="trigger-pulse"></span>
     <span class="trigger-label">AI Assistant</span>
   </button>
 
-  <!-- CHATBOT PANEL -->
+  <!-- =====================================================
+       CHATBOT PANEL
+  ====================================================== -->
   <aside class="chat-panel" id="chatPanel" aria-hidden="true">
 
-    <!-- Header -->
+    <!-- HEADER -->
     <div class="panel-header">
       <div class="panel-identity">
         <div class="avatar">
@@ -77,28 +44,57 @@
         </div>
       </div>
       <div class="panel-actions">
+
+        <!-- WhatsApp icon button in header -->
+        <a class="icon-btn whatsapp-header-btn"
+           href="https://wa.me/923095990236"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Chat on WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 1C7.716 1 1 7.716 1 16c0 2.628.664 5.101 1.83 7.264L1 31l7.95-1.796A14.94 14.94 0 0 0 16 31c8.284 0 15-6.716 15-15S24.284 1 16 1z" fill="#25D366"/>
+            <path d="M23.1 19.774c-.317-.158-1.875-.925-2.166-1.03-.29-.106-.502-.158-.713.159-.211.316-.818 1.03-.003 1.03-.317-.158-.713-.317-1.186-.475-.316-.106-.475-.158-.713.159-.239.316-.925 1.03-1.134 1.241-.21.211-.421.238-.738.08-.317-.159-1.337-.493-2.547-1.572-.941-.84-1.577-1.876-1.762-2.193-.185-.316-.02-.487.139-.645.143-.142.317-.37.475-.556.159-.185.212-.317.317-.528.106-.211.053-.396-.026-.554-.08-.159-.714-1.72-.978-2.354-.257-.618-.519-.534-.713-.544-.185-.01-.396-.012-.607-.012-.211 0-.554.08-.844.396-.29.317-1.108 1.082-1.108 2.638 0 1.556 1.134 3.059 1.292 3.27.159.212 2.232 3.408 5.409 4.779.756.326 1.346.521 1.806.667.759.241 1.45.207 1.995.126.609-.091 1.875-.766 2.139-1.506.264-.74.264-1.374.185-1.506-.08-.132-.29-.212-.607-.37z" fill="white"/>
+          </svg>
+        </a>
+
         <!-- Tab switcher -->
         <div class="tab-switcher">
           <button class="tab-btn active" id="tabChat" title="Chat">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
             Chat
           </button>
           <button class="tab-btn" id="tabLead" title="Register Interest">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
             Register Now
           </button>
         </div>
+
         <button class="icon-btn" id="clearBtn" title="Clear chat">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="3 6 5 6 21 6"/>
+            <path d="M19 6l-1 14H6L5 6"/>
+            <path d="M10 11v6M14 11v6M9 6V4h6v2"/>
+          </svg>
         </button>
         <button class="icon-btn" id="closeBtn" title="Close">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
         </button>
       </div>
     </div>
 
     <!-- ===== CHAT TAB ===== -->
     <div class="tab-content" id="chatTab">
+
       <!-- Quick Topics -->
       <div class="quick-topics" id="quickTopics">
         <p class="qt-label">Quick questions</p>
@@ -124,7 +120,7 @@
       <!-- Input -->
       <div class="input-area">
         <div class="input-wrapper">
-          <textarea id="userInput" class="chat-input" placeholder="Ask about admissions, fees, courses…" rows="1" maxlength="500"></textarea>
+          <textarea id="userInput" class="chat-input" placeholder="Malomat ke liye yaha message kry" rows="1" maxlength="500"></textarea>
           <button class="send-btn" id="sendBtn" disabled>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
               <line x1="22" y1="2" x2="11" y2="13" stroke="white" stroke-width="2" stroke-linecap="round"/>
@@ -132,7 +128,21 @@
             </svg>
           </button>
         </div>
-        <p class="input-hint">Contact Here For More Information 0300-1234567</p>
+        <!-- WhatsApp CTA in footer -->
+        <div class="input-footer">
+          <p class="input-hint">Contact Here For More Information 0309-5990236</p>
+          <a class="wa-footer-link"
+             href="https://wa.me/923095990236"
+             target="_blank"
+             rel="noopener noreferrer"
+             title="WhatsApp us">
+            <svg width="14" height="14" viewBox="0 0 32 32" fill="none">
+              <path d="M16 1C7.716 1 1 7.716 1 16c0 2.628.664 5.101 1.83 7.264L1 31l7.95-1.796A14.94 14.94 0 0 0 16 31c8.284 0 15-6.716 15-15S24.284 1 16 1z" fill="#25D366"/>
+              <path d="M23.1 19.774c-.317-.158-1.875-.925-2.166-1.03-.29-.106-.502-.158-.713.159-.211.316-.818 1.03-.003 1.03-.317-.158-.713-.317-1.186-.475-.316-.106-.475-.158-.713.159-.239.316-.925 1.03-1.134 1.241-.21.211-.421.238-.738.08-.317-.159-1.337-.493-2.547-1.572-.941-.84-1.577-1.876-1.762-2.193-.185-.316-.02-.487.139-.645.143-.142.317-.37.475-.556.159-.185.212-.317.317-.528.106-.211.053-.396-.026-.554-.08-.159-.714-1.72-.978-2.354-.257-.618-.519-.534-.713-.544-.185-.01-.396-.012-.607-.012-.211 0-.554.08-.844.396-.29.317-1.108 1.082-1.108 2.638 0 1.556 1.134 3.059 1.292 3.27.159.212 2.232 3.408 5.409 4.779.756.326 1.346.521 1.806.667.759.241 1.45.207 1.995.126.609-.091 1.875-.766 2.139-1.506.264-.74.264-1.374.185-1.506-.08-.132-.29-.212-.607-.37z" fill="white"/>
+            </svg>
+            WhatsApp Us
+          </a>
+        </div>
       </div>
     </div>
 
@@ -146,20 +156,35 @@
           <p>Fill in your details and our team will get in touch with you shortly.</p>
         </div>
 
-        <!-- Success State (hidden by default) -->
+        <!-- Success State -->
         <div class="lead-success" id="leadSuccess" style="display:none;">
           <div class="success-icon">✅</div>
           <h3>Submitted Successfully!</h3>
           <p>Thank you! Our admissions team will contact you soon.</p>
-          <button class="btn-submit" id="leadAgainBtn" style="margin-top:16px;">Submit Another</button>
+          <!-- WhatsApp CTA on success -->
+          <a class="btn-whatsapp-cta"
+             href="https://wa.me/923095990236"
+             target="_blank"
+             rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 32 32" fill="none">
+              <path d="M16 1C7.716 1 1 7.716 1 16c0 2.628.664 5.101 1.83 7.264L1 31l7.95-1.796A14.94 14.94 0 0 0 16 31c8.284 0 15-6.716 15-15S24.284 1 16 1z" fill="white"/>
+              <path d="M23.1 19.774c-.317-.158-1.875-.925-2.166-1.03-.29-.106-.502-.158-.713.159-.211.316-.818 1.03-.003 1.03-.317-.158-.713-.317-1.186-.475-.316-.106-.475-.158-.713.159-.239.316-.925 1.03-1.134 1.241-.21.211-.421.238-.738.08-.317-.159-1.337-.493-2.547-1.572-.941-.84-1.577-1.876-1.762-2.193-.185-.316-.02-.487.139-.645.143-.142.317-.37.475-.556.159-.185.212-.317.317-.528.106-.211.053-.396-.026-.554-.08-.159-.714-1.72-.978-2.354-.257-.618-.519-.534-.713-.544-.185-.01-.396-.012-.607-.012-.211 0-.554.08-.844.396-.29.317-1.108 1.082-1.108 2.638 0 1.556 1.134 3.059 1.292 3.27.159.212 2.232 3.408 5.409 4.779.756.326 1.346.521 1.806.667.759.241 1.45.207 1.995.126.609-.091 1.875-.766 2.139-1.506.264-.74.264-1.374.185-1.506-.08-.132-.29-.212-.607-.37z" fill="#25D366"/>
+            </svg>
+            Also Chat on WhatsApp
+          </a>
+          <button class="btn-submit" id="leadAgainBtn" style="margin-top:10px;">Submit Another</button>
         </div>
 
         <!-- Form Fields -->
         <div id="leadFormFields">
+
           <!-- Name -->
           <div class="field-group">
             <label class="field-label" for="leadName">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
               Full Name <span class="required">*</span>
             </label>
             <input type="text" id="leadName" class="field-input" placeholder="e.g. Ahmed Khan" maxlength="80" autocomplete="name" />
@@ -169,7 +194,9 @@
           <!-- Phone -->
           <div class="field-group">
             <label class="field-label" for="leadPhone">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.45 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.9z"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.45 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.9z"/>
+              </svg>
               Phone Number <span class="required">*</span>
             </label>
             <input type="tel" id="leadPhone" class="field-input" placeholder="e.g. 0300-1234567" maxlength="20" autocomplete="tel" />
@@ -179,7 +206,10 @@
           <!-- Campus Dropdown -->
           <div class="field-group">
             <label class="field-label" for="leadCampus">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
               Preferred Campus <span class="required">*</span>
             </label>
             <div class="select-wrapper">
@@ -190,7 +220,9 @@
                 <option value="Darogwala">Darogwala</option>
                 <option value="Bhagbanpura">Bhagbanpura</option>
               </select>
-              <svg class="select-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              <svg class="select-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
             </div>
             <span class="field-error" id="campusError"></span>
           </div>
@@ -204,12 +236,14 @@
           <button class="btn-submit" id="leadSubmitBtn">
             <span id="submitBtnText">Submit Enquiry</span>
             <span id="submitBtnSpinner" style="display:none;">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" style="animation:spin 0.8s linear infinite"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+                style="animation:spin 0.8s linear infinite">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+              </svg>
               Submitting…
             </span>
           </button>
 
-          <!-- API error banner -->
           <div class="submit-error" id="submitError" style="display:none;"></div>
         </div>
 
@@ -219,7 +253,6 @@
   </aside>
 
   <div class="chat-overlay" id="chatOverlay"></div>
-
   <script src="/static/chatbot.js"></script>
 </body>
 </html>
