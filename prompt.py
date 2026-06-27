@@ -236,13 +236,6 @@ Format:
 - {Skill 3}
 - {Skill 4}
 
-🚀 **Career Paths:**
-- {Job 1}
-- {Job 2}
-- {Job 3}
-- Freelancing
-- Internship Opportunities
----
 
 [Then attach Main Menu block here — TYPE B]
 
@@ -536,56 +529,47 @@ Overview: Learn MongoDB, Express.js, React.js and Node.js for full
 stack web development.
 Skills: Frontend Development, Backend APIs, Database Integration,
 Authentication Systems
-Jobs: Full Stack Developer, MERN Developer, Web Developer, Freelancer
 
-Android Application Course | Fee: 20,000 PKR
+Android Application Course | Fee: 30,000 PKR
 Overview: Learn professional Android app development using modern
 technologies.
 Skills: Android Studio, Kotlin/Java, UI Design, API Integration
-Jobs: Android Developer, App Developer, Mobile Developer, Freelancer
 
-Cloud Computing | Fee: 22,000 PKR
+Cloud Computing | Fee: 30,000 PKR
 Overview: Learn cloud platforms, deployment, virtualization and cloud
 services.
 Skills: AWS/Azure, Cloud Deployment, Virtualization, Cloud Security
-Jobs: Cloud Engineer, DevOps Engineer, System Admin, Freelancer
 
-Robotics | Fee: 25,000 PKR
+Robotics | Fee: 30,000 PKR
 Overview: Learn robotics systems, automation and smart machines.
 Skills: Circuit Design, Arduino/Raspberry Pi, Automation, Coding
-Jobs: Robotics Engineer, Automation Technician, R&D Engineer, Freelancer
 
-Cyber Security | Fee: 24,000 PKR
+Cyber Security | Fee: 30,000 PKR
 Overview: Learn ethical hacking, cyber protection and network security.
 Skills: Ethical Hacking, Network Security, Penetration Testing, Firewalls
-Jobs: Security Analyst, Ethical Hacker, Network Admin, Freelancer
 
 Full Stack Graphic Designing | Fee: 18,500 PKR
 Overview: Learn complete graphic designing from beginner to advanced.
 Skills: Adobe Photoshop, Illustrator, Canva, Brand Design
-Jobs: Graphic Designer, Brand Designer, Creative Director, Freelancer
 
 Web Designing & Development | Fee: 19,500 PKR
 Overview: Learn website creation from frontend to backend development.
 Skills: HTML, CSS, JavaScript, WordPress
-Jobs: Web Developer, Frontend Developer, UI Designer, Freelancer
 
 UI/UX Designing | Fee: 29,950 PKR
 Overview: Learn modern user interface and user experience designing.
 Skills: Figma, Prototyping, User Research, Wireframing
 Jobs: UI Designer, UX Designer, Product Designer, Freelancer
 
-Generative AI | Fee: 23,000 PKR
+Generative AI | Fee: 25,000 PKR
 Overview: Learn AI tools, prompt engineering and generative AI apps.
 Skills: Prompt Engineering, AI Tools, Automation, Content Generation
-Jobs: AI Specialist, Prompt Engineer, AI Content Creator, Freelancer
 
 Agentic AI | Fee: 25,000 PKR
 Overview: Learn advanced AI agents, workflows and automation systems.
 Skills: AI Agents, Workflow Automation, LLM Integration, API Chaining
-Jobs: AI Engineer, Automation Engineer, AI Developer, Freelancer
 
-YouTube Automation & Monetization | Fee: 14,500 PKR
+YouTube Automation & Monetization | Fee: 25,000 PKR
 Overview: Learn YouTube channel growth and monetization strategies.
 Skills: Content Strategy, SEO, Video Editing, Channel Management
 Jobs: YouTuber, Content Creator, Social Media Manager, Freelancer
@@ -593,25 +577,22 @@ Jobs: YouTuber, Content Creator, Social Media Manager, Freelancer
 Video Editing | Fee: 29,950 PKR
 Overview: Learn professional video editing for social media and YouTube.
 Skills: Premiere Pro, After Effects, Color Grading, Motion Graphics
-Jobs: Video Editor, Content Creator, YouTube Editor, Freelancer
 
 React and MongoDB | Fee: 25,500 PKR
 Overview: Learn frontend and database development using React.js and
 MongoDB for modern web applications.
 Skills: React.js, MongoDB, REST APIs, Component Design
-Jobs: Frontend Developer, MERN Developer, Web Developer, Freelancer
 
 Adobe Premiere Pro | Fee: 29,950 PKR
 Overview: Learn professional video editing using Adobe Premiere Pro.
-Skills: Video Editing, Transitions, Color Correction, Effects
-Jobs: Video Editor, YouTuber, Content Creator, Freelancer
+Skills: Video Editing, Transitions, Canva with AI , Effects
 
 Shopify | Fee: 25,950 PKR
 Overview: Learn to create and manage online stores using Shopify.
 Skills: Store Setup, Product Listing, Payment Integration, Marketing
 Jobs: Shopify Developer, E-Commerce Manager, Store Owner, Freelancer
 
-Java | Fee: 15,500 PKR
+Java | Fee: 25,000 PKR
 Overview: Learn Java programming for software and application development.
 Skills: OOP, Java Syntax, Desktop Apps, Problem Solving
 Jobs: Java Developer, Software Engineer, App Developer, Freelancer
@@ -619,40 +600,33 @@ Jobs: Java Developer, Software Engineer, App Developer, Freelancer
 Digital Marketing | Fee: 15,500 PKR
 Overview: Learn online marketing strategies and advertising techniques.
 Skills: Social Media Marketing, Google Ads, Content Marketing, Analytics
-Jobs: Digital Marketer, SEO Specialist, Ad Manager, Freelancer
 
 Freelancing Course | Fee: 28,550 PKR
 Overview: Learn how to earn online through freelancing platforms.
 Skills: Fiverr/Upwork Setup, Client Dealing, Proposal Writing, Niche Selection
-Jobs: Freelancer, Online Earner, Virtual Assistant, Consultant
 
 E-Commerce + eBay | Fee: 25,590 PKR
 Overview: Learn online selling and store management using eBay.
 Skills: Product Listing, Store Setup, Order Management, Customer Service
-Jobs: eBay Seller, E-Commerce Manager, Online Store Owner, Freelancer
 
 SEO Search Engine Optimization | Fee: 22,000 PKR
 Overview: Learn website optimization to improve Google rankings.
 Skills: On-Page SEO, Off-Page SEO, Keyword Research, Link Building
-Jobs: SEO Specialist, Content Strategist, Digital Marketer, Freelancer
 
 Mobile Repairing Course | Fee: 22,500 PKR
 Overview: Learn mobile phone repairing, software flashing and hardware
 maintenance for Android and smartphones.
-Skills: Hardware Repair, Software Flashing, Troubleshooting, Tools Usage
-Jobs: Mobile Technician, Repair Shop Owner, Service Engineer, Freelancer
+Skills: Hardware Repair, Software Repairing, Troubleshooting, Tools Usage
 
 Laptop Repairing Course | Fee: 18,500 PKR
 Overview: Learn laptop troubleshooting, hardware repairing and OS
 installation.
-Skills: Hardware Diagnosis, OS Installation, Component Repair, Networking
-Jobs: Laptop Technician, IT Support, Service Engineer, Repair Business
+Skills: Hardware Repairing, OS Installation, Component Repair, Networking
 
-Computer Hardware Engineering | Fee: 15,500 PKR
+Computer Hardware Engineering | Fee: 15,000 PKR
 Overview: Learn computer assembling, hardware troubleshooting and
 networking basics.
 Skills: PC Assembling, Troubleshooting, Networking, Maintenance
-Jobs: Hardware Engineer, IT Technician, Network Admin, Freelancer
 
 A1 Visa Course | Fee: 15,500 PKR
 Overview: Improve English communication, IELTS preparation and interview
@@ -663,25 +637,21 @@ Jobs: Study Abroad, Spouse Visa, Immigration Prep, Language Coaching
 IELTS | Fee: 22,450 PKR
 Overview: Prepare for IELTS Academic and General Training modules.
 Skills: Listening, Reading, Writing, Speaking
-Jobs: Study Abroad, Immigration, University Admission, Language Teaching
 
 Spoken English | Fee: 18,500 PKR
 Overview: Develop fluency, pronunciation, vocabulary and confidence in
 English communication.
 Skills: Speaking Fluency, Pronunciation, Vocabulary, Confidence Building
-Jobs: English Trainer, Corporate Communication, Customer Service, Freelancer
 
 AutoCAD 2D & 3D | Fee: 18,500 PKR
 Overview: Learn AutoCAD for architectural, engineering and technical
 drawings in 2D and 3D.
-Skills: 2D Drafting, 3D Modeling, Technical Drawing, Blueprint Reading
-Jobs: CAD Designer, Architectural Draftsman, Civil Technician, Freelancer
+Skills: 2D Drafting, 3D Modeling, Technical Drawing, Creating and Editing
 
 3D Max | Fee: 22,500 PKR
 Overview: Learn 3D modeling, animation, rendering and visualization using
 3ds Max.
-Skills: 3D Modeling, Rendering, Animation, Visualization
-Jobs: 3D Artist, Interior Designer, Game Designer, Freelancer
+Skills: 3D Modeling, Lightening, Animation, Visualization
 
 Peach Tree, Quick Book, Tally | Fee: 22,500 PKR
 Overview: Learn computerized accounting, bookkeeping and financial
@@ -689,21 +659,18 @@ management using Peachtree, QuickBooks and Tally ERP.
 Skills: Bookkeeping, Payroll Management, Financial Reports, Inventory
 Jobs: Accountant, Bookkeeper, Finance Officer, Freelancer
 
-Computer Course For Beginners | Fee: 15,500 PKR
+Computer Course For Beginners | Fee: 13,500 PKR
 Overview: Learn basic computer operations, MS Office, internet usage and
 digital skills for beginners.
 Skills: MS Word, MS Excel, Internet Usage, Basic Computing
-Jobs: Data Entry Operator, Office Assistant, Admin Staff, Freelancer
 
 CCTV Course | Fee: 18,000 PKR
 Overview: Learn CCTV camera installation, configuration and maintenance.
 Skills: Camera Installation, Network Setup, DVR/NVR Config, Maintenance
-Jobs: CCTV Technician, Security Systems Installer, IT Support, Freelancer
 
 Auto EFI Scanner Training | Fee: 23,500 PKR
 Overview: Learn vehicle diagnostics and EFI system scanning and repair.
-Skills: EFI Scanning, Engine Diagnostics, Fault Code Reading, Repair
-Jobs: Auto Technician, EFI Specialist, Vehicle Diagnostic Expert, Workshop Owner
+Skills: EFI Scanning, Engine Diagnostics, Ignition System, Repair
 
 ====================================================================
 SECTION 6 — OUT OF SCOPE QUESTIONS (TYPE B)
