@@ -65,15 +65,26 @@ def get_groq_client():
 def get_gspread_client():
     """Return a cached gspread client, creating one if needed."""
     global _gspread_client
+
     if _gspread_client is None:
-        creds_file = Path(__file__).parent / "google_credentials.json"
-        if not creds_file.exists():
-            raise FileNotFoundError(
-                "google_credentials.json not found next to main.py"
+        creds_json = os.getenv("GOOGLE_CREDENTIALS")
+
+        if not creds_json:
+            raise ValueError(
+                "GOOGLE_CREDENTIALS environment variable is not set."
             )
-        creds = Credentials.from_service_account_file(str(creds_file), scopes=SCOPES)
+
+        creds_dict = json.loads(creds_json)
+
+        creds = Credentials.from_service_account_info(
+            creds_dict,
+            scopes=SCOPES
+        )
+
         _gspread_client = gspread.authorize(creds)
+
         logger.info("gspread client created successfully.")
+
     return _gspread_client
 
 
