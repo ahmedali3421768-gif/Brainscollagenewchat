@@ -62,24 +62,35 @@ def get_groq_client():
 
 
 # ── Google Sheets ──────────────────────────────────
+import json
+
 def get_gspread_client():
-    """Return a cached gspread client, creating one if needed."""
     global _gspread_client
 
     if _gspread_client is None:
+
         creds_json = os.getenv("GOOGLE_CREDENTIALS")
 
-        if not creds_json:
-            raise ValueError(
-                "GOOGLE_CREDENTIALS environment variable is not set."
+        if creds_json:
+            creds_dict = json.loads(creds_json)
+
+            creds = Credentials.from_service_account_info(
+                creds_dict,
+                scopes=SCOPES
             )
 
-        creds_dict = json.loads(creds_json)
+        else:
+            creds_file = Path(__file__).parent / "google_credentials.json"
 
-        creds = Credentials.from_service_account_info(
-            creds_dict,
-            scopes=SCOPES
-        )
+            if not creds_file.exists():
+                raise FileNotFoundError(
+                    "Neither GOOGLE_CREDENTIALS nor google_credentials.json found."
+                )
+
+            creds = Credentials.from_service_account_file(
+                str(creds_file),
+                scopes=SCOPES
+            )
 
         _gspread_client = gspread.authorize(creds)
 
